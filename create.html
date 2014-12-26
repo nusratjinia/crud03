@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+</head>
+<body>
+<form action="add.php" method="POST">
+    <label>present_address:</label>
+    <input type="text" name="present_address">
+
+    <label>permanent_address:</label>
+    <input type="text" name="permanent_address">
+
+    <label>mobile:</label>
+    <input type="text" name="mobile">
+
+    <label>district:</label>
+    <select name="district">
+    <option value="Bogra">Bogra</option>
+    <option value="Dinajpur">Dinajpur</option>
+    <option value="Nator">Nator</option>
+    <option value="Comilla">1Comilla</option>
+    <option value="Feni">Feni</option>
+        <option value ="Bogra"<?php if ($district==Bogra)each,"selected=selected?>>Bogra</option>
+
+    <label>emergency_contact:</label>
+    <input type="text" name="emergency_contact">
+
+    <button type="submit">submit</button>
+
+
+</form>
+</body>
+</html>
